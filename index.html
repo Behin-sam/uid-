@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unsent</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home'); return false;">unsent</a>
+
+  <div class="nav-links">
+    <button onclick="showPage('archive')" id="nav-archive">archive</button>
+    <button onclick="showPage('random')"  id="nav-random">random</button>
+    <button onclick="showPage('saved')"   id="nav-saved">saved</button>
+    <button onclick="showPage('palette')" id="nav-palette">palette</button>
+    <button onclick="showPage('about')"   id="nav-about">about</button>
+
+    <div id="nav-user-area">
+      <button class="nav-login-btn" onclick="showPage('login')" id="nav-login-btn">sign in</button>
+    </div>
+
+    <button class="submit-btn" onclick="showPage('submit')">submit</button>
+  </div>
+
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <button onclick="showPage('archive'); closeMenu()" id="m-nav-archive">archive</button>
+  <button onclick="showPage('random');  closeMenu()" id="m-nav-random">random</button>
+  <button onclick="showPage('saved');   closeMenu()" id="m-nav-saved">saved</button>
+  <button onclick="showPage('palette'); closeMenu()" id="m-nav-palette">palette</button>
+  <button onclick="showPage('about');   closeMenu()" id="m-nav-about">about</button>
+  <button onclick="showPage('login');   closeMenu()" id="m-nav-login">sign in</button>
+  <button class="m-submit" onclick="showPage('submit'); closeMenu()">submit</button>
+</div>
+
+
+<div id="page-login" class="page">
+  <div class="login-wrap">
+    <p class="login-eyebrow">welcome back</p>
+    <h2 id="login-title">sign in</h2>
+    <p class="login-sub" id="login-sub">
+      Your unsent messages, saved bookmarks, and reactions — all in one place.
+    </p>
+
+    <div id="login-form">
+      <div class="login-field">
+        <label>email</label>
+        <input type="email" id="login-email" placeholder="you@example.com">
+      </div>
+      <div class="login-field">
+        <label>password</label>
+        <input type="password" id="login-password" placeholder="········">
+        <p class="login-error" id="login-error">
+          incorrect email or password. try demo@unsent.com / unsent123
+        </p>
+      </div>
+      <div class="login-btn-row">
+        <button class="btn-primary" onclick="doLogin()">sign in</button>
+      </div>
+      <div class="login-divider"><span>or</span></div>
+      <button class="login-guest-btn" onclick="guestLogin()">continue as guest</button>
+      <p class="login-toggle">no account? <a onclick="switchToSignup()">create one</a></p>
+    </div>
+
+    <div id="signup-form" style="display:none">
+      <div class="login-field">
+        <label>display name</label>
+        <input type="text" id="signup-name" placeholder="something anonymous is fine">
+      </div>
+      <div class="login-field">
+        <label>email</label>
+        <input type="email" id="signup-email" placeholder="you@example.com">
+      </div>
+      <div class="login-field">
+        <label>password</label>
+        <input type="password" id="signup-password" placeholder="min 6 characters">
+        <p class="login-error" id="signup-error">please fill in all fields (min 6 char password).</p>
+      </div>
+      <div class="login-btn-row">
+        <button class="btn-primary" onclick="doSignup()">create account</button>
+      </div>
+      <div class="login-divider"><span>or</span></div>
+      <button class="login-guest-btn" onclick="guestLogin()">continue as guest</button>
+      <p class="login-toggle">already have one? <a onclick="switchToLogin()">sign in</a></p>
+    </div>
+  </div>
+</div>
+
+
+<div id="page-home" class="page active">
+  <div class="hero">
+    <h1>words you never sent</h1>
+    <p>
+      An anonymous archive of unsent messages to first loves.
+      Because some things are easier to say when no one's listening.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary"   onclick="showPage('submit')">write yours</button>
+      <button class="btn-secondary" onclick="showPage('archive')">read theirs</button>
+    </div>
+  </div>
+  <div class="mosaic-section">
+    <p class="mosaic-label">every tile is someone's feeling</p>
+    <div class="mosaic" id="home-mosaic"></div>
+  </div>
+
+</div>
+
+
+<div id="page-archive" class="page">
+
+  <div class="archive-header">
+    <div>
+      <h2>the archive</h2>
+      <span class="count-badge" id="archive-count"></span>
+    </div>
+  </div>
+  <div class="search-bar">
+    <span class="search-icon">✦</span>
+    <input
+      type="text"
+      id="search-input"
+      placeholder="search by name or word…"
+      oninput="renderArchive()">
+  </div>
+
+  <div class="color-filters" id="color-filters"></div>
+
+  <div class="messages-grid" id="messages-grid"></div>
+
+  <button class="load-more" id="load-more-btn" onclick="loadMore()">load more</button>
+
+  <div class="empty-state" id="empty-state" style="display:none">
+    nothing found for that name yet.<br>maybe be the first to write it.
+  </div>
+
+</div>
+
+
+<div id="page-submit" class="page">
+
+  <div id="submit-form-wrap">
+    <h2>say it here</h2>
+    <p class="subtitle">
+      Write what you couldn't send. It stays here, anonymous,
+      with everyone else who couldn't either.
+    </p>
+
+    <div class="form-group">
+      <label>to</label>
+      <input
+        type="text"
+        id="input-to"
+        placeholder="their name…"
+        maxlength="40"
+        oninput="updatePreview()">
+    </div>
+
+    <div class="form-group">
+      <label>your message</label>
+      <textarea
+        id="input-message"
+        placeholder="what you never said…"
+        maxlength="500"
+        oninput="updatePreview()"></textarea>
+      <div class="char-count"><span id="char-remaining">500</span> characters left</div>
+    </div>
+
+    <div class="form-group">
+      <p class="color-picker-label">what color is this feeling?</p>
+      <div class="color-picker-grid" id="color-picker"></div>
+    </div>
+
+    <div class="message-preview" id="preview"></div>
+
+    <button class="btn-primary" onclick="submitMessage()">send it into the void</button>
+  </div>
+
+  <div class="success-msg" id="success-msg">
+    <h3>it's out there now.</h3>
+    <p>Your message lives in the archive,<br>alongside everyone else's unspoken words.</p>
+    <br>
+    <button class="btn-secondary" onclick="resetForm()">write another</button>
+  </div>
+
+</div>
+
+<div id="page-about" class="page">
+
+  <h2>about unsent</h2>
+  <p>Some words never make it to "send." This is a place for them.</p>
+  <p>
+    Unsent is an anonymous archive of messages people never delivered —
+    to first loves, lost friends, estranged family, or anyone who still
+    occupies space in someone's chest.
+  </p>
+  <p>
+    You choose a color that represents the feeling. You write what you couldn't say.
+    It becomes part of something larger — a collective record of unspoken human emotion.
+  </p>
+  <p>
+    Inspired by <em>The Unsent Project</em> by Rora Blue (2015),
+    which has collected over 5 million messages worldwide.
+  </p>
+  <p style="color:#aaa; font-size:0.85rem; margin-top:2rem;">
+    All submissions are anonymous and cannot be edited or deleted.
+  </p>
+
+</div>
+
+<div id="page-random" class="page">
+
+  <p class="random-label">a message for you, from a stranger</p>
+
+  <div class="random-card" id="random-card">
+    <div class="r-to"   id="random-to"></div>
+    <div class="r-text" id="random-text"></div>
+  </div>
+
+  <div class="random-actions">
+    <button class="btn-primary"   onclick="nextRandom()">another one</button>
+    <button class="btn-secondary" onclick="saveRandomToBookmarks()">save this</button>
+  </div>
+
+  <p style="margin-top:2.5rem; font-size:0.82rem; color:var(--muted); font-family:'Lora',serif; font-style:italic;">
+    sometimes you need to read someone else's words to find yours.
+  </p>
+
+</div>
+
+<div id="page-saved" class="page">
+
+  <h2>saved</h2>
+  <p class="page-sub">Messages that stayed with you. Tap ♡ on any card to save it here.</p>
+
+  <div class="messages-grid" id="saved-grid"></div>
+
+  <div class="saved-empty" id="saved-empty">
+    nothing saved yet.<br>
+    tap the heart on any message to keep it here.
+  </div>
+
+</div>
+
+<div id="page-palette" class="page">
+
+  <h2>the palette</h2>
+  <p class="page-sub">Every color is a feeling. Here's what the archive is carrying right now.</p>
+
+  <div class="palette-stats-row">
+    <div class="palette-stat-card">
+      <div class="palette-stat-num"   id="stat-total">—</div>
+      <div class="palette-stat-label">messages</div>
+    </div>
+    <div class="palette-stat-card">
+      <div class="palette-stat-num"   id="stat-colors">—</div>
+      <div class="palette-stat-label">colors used</div>
+    </div>
+    <div class="palette-stat-card">
+      <div class="palette-stat-num"   id="stat-dominant">—</div>
+      <div class="palette-stat-label">dominant feeling</div>
+    </div>
+  </div>
+
+  <div class="palette-donut-wrap">
+    <svg class="palette-donut-svg" id="donut-svg" width="130" height="130" viewBox="0 0 130 130"></svg>
+    <div class="palette-donut-legend" id="donut-legend"></div>
+  </div>
+  <div id="palette-groups"></div>
+  <div class="palette-detail" id="palette-detail">
+    <div class="palette-detail-header">
+      <div class="palette-detail-dot" id="detail-dot"></div>
+      <div>
+        <div class="palette-detail-name"    id="detail-name"></div>
+        <div class="palette-detail-meaning" id="detail-meaning"></div>
+      </div>
+    </div>
+    <div class="palette-detail-messages" id="detail-messages"></div>
+  </div>
+
+  <p class="palette-total" id="palette-total"></p>
+
+</div>
+
+<div id="page-my" class="page">
+
+  <h2>my messages</h2>
+  <p class="page-sub">The ones you sent into the void — from this session.</p>
+
+  <div class="messages-grid" id="my-grid"></div>
+
+  <div class="my-empty" id="my-empty">
+    nothing here yet.<br>
+    <a onclick="showPage('submit')">write your first message →</a>
+  </div>
+
+</div>
+
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <div class="modal" id="modal-inner">
+    <div class="modal-color-bar" id="modal-bar"></div>
+    <div class="modal-body">
+      <div class="modal-to"   id="modal-to"></div>
+      <div class="modal-text" id="modal-text"></div>
+      <div class="modal-actions">
+        <button class="modal-react-btn" id="modal-react-btn" onclick="toggleReact()">
+          <span id="react-heart">♡</span>
+          <span id="react-count">0</span>
+        </button>
+        <button class="modal-share-btn" onclick="shareMessage()">share</button>
+        <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<footer>
+  <p>
+    unsent · an archive of unspoken words<br>
+    <span style="font-family:'Lora',serif; font-style:italic; font-size:0.85rem; color:#c4bfb7;">
+      because some things deserve to exist, even if they can't be delivered.
+    </span>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
