@@ -5,7 +5,7 @@
 }
 
 .palette-row{
-  margin:5px !important;
+  gap: 2rem !important;
 }
 
 nav {
