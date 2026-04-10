@@ -3,13 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-:root {
-  --bg: #f9f7f4;
-  --text: #1a1a1a;
-  --muted: #888;
-  --border: rgba(0, 0, 0, 0.1);
-  --card-bg: #fff;
+html{
+  font-size: 20px;
 }
 
 body {
@@ -197,7 +192,7 @@ nav {
 }
 
 .login-eyebrow {
-  font-size: 0.72rem;
+  font-size: 0.9rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -563,7 +558,13 @@ nav {
   columns: 3;
   column-gap: 12px;
 }
-
+:root {
+  --bg: #f9f7f4;
+  --text: #1a1a1a;
+  --muted: #888;
+  --border: rgba(0, 0, 0, 0.1);
+  --card-bg: #fff;
+}
 @media (max-width: 780px) {
   .messages-grid {
     columns: 2;
