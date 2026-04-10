@@ -21,7 +21,7 @@ nav {
 
 .nav-logo {
   font-family: 'Lora', serif;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   font-style: italic;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -40,7 +40,7 @@ nav {
   border: none;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.96rem;
   font-weight: 400;
   color: var(--muted);
   letter-spacing: 0.05em;
@@ -59,7 +59,7 @@ nav {
   color: var(--bg) !important;
   padding: 0.45rem 1.1rem;
   border-radius: 2rem;
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   letter-spacing: 0.06em;
   transition: opacity 0.2s !important;
 }
@@ -74,7 +74,7 @@ nav {
   color: var(--text) !important;
   padding: 0.4rem 1rem;
   border-radius: 2rem !important;
-  font-size: 0.78rem !important;
+  font-size: 0.92rem !important;
 }
 
 .nav-login-btn:hover {
@@ -134,7 +134,7 @@ nav {
   border: none;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--muted);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -184,7 +184,7 @@ nav {
 }
 
 .login-eyebrow {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -194,7 +194,7 @@ nav {
 .login-wrap h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
@@ -202,7 +202,7 @@ nav {
 
 .login-wrap .login-sub {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 2.5rem;
 }
@@ -213,7 +213,7 @@ nav {
 
 .login-field label {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -227,7 +227,7 @@ nav {
   border-radius: 8px;
   background: var(--card-bg);
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text);
   outline: none;
   transition: border-color 0.2s;
@@ -254,7 +254,7 @@ nav {
 
 .login-toggle {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--muted);
   margin-top: 1.5rem;
 }
@@ -282,7 +282,7 @@ nav {
 }
 
 .login-divider span {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -294,7 +294,7 @@ nav {
   background: transparent;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--muted);
   transition: color 0.2s, border-color 0.2s;
 }
@@ -305,7 +305,7 @@ nav {
 }
 
 .login-error {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: #c05a5a;
   margin-top: 0.5rem;
   display: none;
@@ -335,7 +335,7 @@ nav {
 
 .hero h1 {
   font-family: 'Lora', serif;
-  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-size: clamp(2.8rem, 6vw, 5rem);
   font-style: italic;
   font-weight: 400;
   line-height: 1.1;
@@ -345,7 +345,7 @@ nav {
 
 .hero p {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 300;
   max-width: 440px;
   margin: 0 auto 2.5rem;
@@ -365,10 +365,10 @@ nav {
   border: none;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 0.8rem 2rem;
+  padding: 0.9rem 2.2rem;
   border-radius: 2rem;
   transition: opacity 0.2s;
 }
@@ -383,10 +383,10 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 0.8rem 2rem;
+  padding: 0.9rem 2.2rem;
   border-radius: 2rem;
   transition: background 0.2s;
 }
@@ -402,7 +402,7 @@ nav {
 
 .mosaic-label {
   text-align: center;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -443,7 +443,7 @@ nav {
   justify-content: center;
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.7);
   padding: 4px;
   text-align: center;
@@ -464,7 +464,7 @@ nav {
   border-radius: 2rem;
   background: var(--card-bg);
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--text);
   outline: none;
   transition: border-color 0.2s;
@@ -484,7 +484,7 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   pointer-events: none;
 }
 
@@ -506,12 +506,12 @@ nav {
 .archive-header h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
 }
 
 .count-badge {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted);
   letter-spacing: 0.05em;
 }
@@ -557,6 +557,7 @@ nav {
   --border: rgba(0, 0, 0, 0.1);
   --card-bg: #fff;
   --scale: 1.1;
+  font-size: 18px;
 }
 @media (max-width: 780px) {
   .messages-grid {
@@ -587,8 +588,7 @@ nav {
 .message-text {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.15rem;
-  /* FIX: was fine, kept as-is */
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #fff;
   margin-bottom: 1.1rem;
@@ -596,14 +596,14 @@ nav {
 }
 
 .message-meta {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.82);
 }
 
 .message-to {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: 'Lora', serif;
   font-style: italic;
   color: #fff;
@@ -622,14 +622,14 @@ nav {
 #page-submit h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
 #page-submit .subtitle {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   margin-bottom: 2.5rem;
 }
@@ -640,7 +640,7 @@ nav {
 
 .form-group label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -655,7 +655,7 @@ nav {
   background: var(--card-bg);
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--text);
   outline: none;
   transition: border-color 0.2s;
@@ -673,7 +673,7 @@ nav {
   background: var(--card-bg);
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--text);
   outline: none;
   resize: vertical;
@@ -693,7 +693,7 @@ nav {
 }
 
 .color-picker-label {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -739,14 +739,14 @@ nav {
 .preview-text {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   line-height: 1.8;
   color: #fff;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
 }
 
 .preview-to {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: 'Lora', serif;
   font-style: italic;
   color: #fff;
@@ -757,7 +757,7 @@ nav {
 
 .char-count {
   text-align: right;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--muted);
   margin-top: 0.4rem;
 }
@@ -775,7 +775,7 @@ nav {
 .success-msg h3 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -783,6 +783,7 @@ nav {
 .success-msg p {
   color: var(--muted);
   line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 
@@ -795,13 +796,13 @@ nav {
 #page-about h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
 #page-about p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   color: #444;
   margin-bottom: 1.2rem;
@@ -853,7 +854,7 @@ nav {
 }
 
 .modal-to {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-family: 'Lora', serif;
   font-style: italic;
   color: var(--text);
@@ -864,7 +865,7 @@ nav {
 .modal-text {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   line-height: 1.85;
   color: var(--text);
   margin-bottom: 1.5rem;
@@ -883,7 +884,7 @@ nav {
   border-radius: 2rem;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -901,7 +902,7 @@ nav {
   border-radius: 2rem;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted);
   transition: all 0.2s;
   display: flex;
@@ -926,7 +927,7 @@ nav {
   border-radius: 2rem;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted);
   transition: all 0.2s;
 }
@@ -943,7 +944,7 @@ nav {
   color: var(--muted);
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.15rem;
   line-height: 1.8;
 }
 
@@ -956,7 +957,7 @@ nav {
   border-radius: 2rem;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -975,7 +976,7 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.15rem;
   opacity: 0.45;
   transition: opacity 0.2s;
   color: #fff;
@@ -1000,14 +1001,14 @@ nav {
 #page-saved h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
 
 .page-sub {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -1019,6 +1020,7 @@ nav {
   font-style: italic;
   color: var(--muted);
   line-height: 1.9;
+  font-size: 1.05rem;
 }
 
 
@@ -1037,7 +1039,7 @@ nav {
 }
 
 .random-label {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1068,7 +1070,7 @@ nav {
 .random-card .r-to {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: 500;
   margin-bottom: 0.9rem;
@@ -1078,7 +1080,7 @@ nav {
 .random-card .r-text {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.85;
   color: #fff;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -1101,7 +1103,7 @@ nav {
 #page-palette h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
@@ -1124,21 +1126,21 @@ nav {
 .palette-stat-num {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: 400;
   line-height: 1;
   margin-bottom: 0.35rem;
 }
 
 .palette-stat-label {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
 .palette-section-title {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -1195,13 +1197,13 @@ nav {
 }
 
 .palette-name {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: var(--text);
   letter-spacing: 0.02em;
   font-weight: 500;
 }
 .palette-meaning {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: var(--muted);
   font-style: italic;
   font-family: 'Lora', serif;
@@ -1223,7 +1225,7 @@ nav {
 
 .palette-count {
   text-align: right;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: var(--muted);
   font-weight: 500;
 }
@@ -1259,11 +1261,11 @@ nav {
 .palette-detail-name {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .palette-detail-meaning {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--muted);
   margin-top: 0.25rem;
 }
@@ -1278,7 +1280,7 @@ nav {
 .palette-detail-msg {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: #555;
   line-height: 1.75;
   padding-left: 1.2rem;
@@ -1291,7 +1293,7 @@ nav {
 }
 
 .palette-detail-msg-to {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   color: var(--muted);
   margin-bottom: 0.3rem;
 }
@@ -1323,7 +1325,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
 }
 
 .palette-legend-dot {
@@ -1339,14 +1341,14 @@ nav {
 
 .palette-legend-pct {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   margin-left: auto;
   padding-left: 1rem;
 }
 
 .palette-total {
   margin-top: 2rem;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: var(--muted);
   border-top: 1px solid var(--border);
   padding-top: 1.2rem;
@@ -1362,7 +1364,7 @@ nav {
 #page-my h2 {
   font-family: 'Lora', serif;
   font-style: italic;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
@@ -1374,6 +1376,7 @@ nav {
   font-style: italic;
   color: var(--muted);
   line-height: 1.9;
+  font-size: 1.05rem;
 }
 
 .my-empty a {
@@ -1392,7 +1395,7 @@ nav {
   color: var(--bg);
   padding: 0.7rem 1.6rem;
   border-radius: 2rem;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   letter-spacing: 0.04em;
   opacity: 0;
   transition: all 0.3s;
@@ -1415,7 +1418,7 @@ footer {
 }
 
 footer p {
-  font-size: 0.78rem;
+  font-size: 0.92rem;
   color: var(--muted);
   line-height: 1.8;
 }
@@ -1448,11 +1451,11 @@ footer p {
   }
 
   .nav-links button {
-    font-size: 0.78rem;
+    font-size: 0.92rem;
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+    font-size: clamp(2.5rem, 5.5vw, 4.2rem);
   }
 
   .palette-donut-wrap {
@@ -1488,11 +1491,11 @@ footer p {
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2.2rem, 8vw, 3.4rem);
   }
 
   .hero p {
-    font-size: 0.93rem;
+    font-size: 1.05rem;
   }
 
   .hero-actions {
@@ -1527,7 +1530,7 @@ footer p {
   }
 
   .message-text {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 
   #page-archive {
@@ -1581,12 +1584,12 @@ footer p {
   #page-saved h2,
   #page-my h2,
   #page-palette h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   .form-group input[type="text"],
   .form-group textarea {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .form-group textarea {
@@ -1599,7 +1602,7 @@ footer p {
   }
 
   .palette-stat-num {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 
   .palette-stat-card {
@@ -1616,15 +1619,15 @@ footer p {
   }
 
   .palette-name {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   .palette-meaning {
-    font-size: 0.75rem;
+    font-size: 0.88rem;
   }
 
   .palette-section-title {
-    font-size: 0.68rem;
+    font-size: 0.82rem;
   }
 
   .login-wrap {
@@ -1653,7 +1656,7 @@ footer p {
   }
 
   .modal-text {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 
   .modal-actions {
@@ -1664,7 +1667,7 @@ footer p {
   .modal-react-btn,
   .modal-close,
   .modal-share-btn {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     padding: 0.45rem 0.85rem;
   }
 
@@ -1674,7 +1677,7 @@ footer p {
   }
 
   .random-card .r-text {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
   }
 
   .random-actions {
@@ -1691,7 +1694,7 @@ footer p {
 
 @media (max-width: 420px) {
   .hero h1 {
-    font-size: 1.9rem;
+    font-size: 2.1rem;
   }
 
   .mosaic-tile {
@@ -1713,7 +1716,7 @@ footer p {
   }
 
   .message-text {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   nav {
