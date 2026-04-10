@@ -27,6 +27,7 @@ nav {
   color: var(--text);
   text-decoration: none;
   flex-shrink: 0;
+  margin-right:10px;
 }
 
 .nav-links {
