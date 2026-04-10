@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-.palette-swatch{
-  margin:3px !important;
+.palette-row{
+  margin:5px !important;
 }
 
 nav {
