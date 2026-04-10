@@ -1614,7 +1614,7 @@ footer p {
 
   .palette-row {
     grid-template-columns: 18px 1fr 80px 28px;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .palette-name-col {
