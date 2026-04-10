@@ -3,42 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-  font-size: 20px;
-}
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-  min-height: 100vh;
-  font-size: 1.05rem;
-  
-}
-.hero h1 {
-  font-size: clamp(2.8rem, 7vw, 5rem);
-}
-.hero p {
-  font-size: 1.1rem;
-}
-.btn-primary,
-.btn-secondary {
-  font-size: 0.95rem;
-}
-.message-text {
-  font-size: 1.3rem;
-}
-.form-group input,
-.form-group textarea {
-  font-size: 1.05rem;
-}
-body {
-  font-size: calc(1rem * var(--scale));
-}
 
-.message-text {
-  font-size: calc(1.15rem * var(--scale));
-}
 
 nav {
   position: sticky;
