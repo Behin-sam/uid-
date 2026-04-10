@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-.palette-row{
-  gap: 2rem !important;
-}
 
 nav {
   position: sticky;
@@ -1170,7 +1167,7 @@ nav {
   display: grid;
   grid-template-columns: 24px 1fr 120px 40px;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1.2rem 0.6rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   cursor: pointer;
@@ -1444,7 +1441,7 @@ footer p {
 
   .palette-row {
     grid-template-columns: 20px 70px 1fr 30px;
-    gap: 0.7rem;
+    gap: 1rem;
   }
 
   #page-palette {
@@ -1626,7 +1623,7 @@ footer p {
 
   .palette-row {
     grid-template-columns: 18px 1fr 80px 28px;
-    gap: 0.75rem;
+    gap: 1rem;
   }
 
   .palette-name-col {
